@@ -1,11 +1,9 @@
-<html>
-<body>
-</body>
-<h1/>Welcome to my boring web app</h1>
+<% @movies.each do |movie| %>
+  <div>
+    <h1><%= movie.name %></h1><br />
+    <i><%= movie.year %></i><br />
+    <p><%= movie.description %></p><br />
+  </div>
 
-<br />
-<br />
-<br />
-
-<h3> Due to time constraints, I'm making a very basic webpage here just to show you I can! <h3>
-</html>
+  <hr />
+<% end %>

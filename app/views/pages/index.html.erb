@@ -1,3 +1,9 @@
+<div class= 'title'>
+<h1> Welcome to Movie List! </h1>
+</div>
+
+
+
 <% @movies.each do |movie| %>
   <div>
     <h1><%= movie.name %></h1><br />
@@ -7,3 +13,5 @@
 
   <hr />
 <% end %>
+
+<%= new_page_path  'Click here to add your favorite!' %>
